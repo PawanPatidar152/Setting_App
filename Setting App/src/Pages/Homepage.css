@@ -1,0 +1,59 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.mainSetting {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url(../assets/HomepageWallpaper.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.nodge {
+  /* height: 40px; */
+  width: 40%;
+  background-color: black;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;}
+
+.topNav {
+  position: sticky;
+  height: 70px;
+  width: 100%;
+  border: none;
+  top: 0px;
+  z-index: 100;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+.topNavlogo {
+  display: flex;
+  column-gap: 5px;
+}
+.topNavlogo img {
+  height: 15px;
+}
+
+.settingIcon {
+  height: 4.375rem;
+  width: 60px;
+  margin: 30px;
+}
+#battery {
+  height: 20px;
+}

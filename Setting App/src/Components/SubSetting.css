@@ -1,0 +1,11 @@
+.subSettingLeft{
+    display: flex;
+    column-gap: 11px;
+}
+hr{
+    margin-top: 10px;
+    margin-left: 25px;
+}
+#data{
+    color: grey;
+}

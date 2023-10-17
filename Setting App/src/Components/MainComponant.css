@@ -1,0 +1,7 @@
+.mainComponant{
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(60, 59, 59);
+    padding-bottom: 0px;
+}
