@@ -1,0 +1,33 @@
+.brightness-slider {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.brightness-slider img{
+    height: 30px;
+    width: 30px;
+  }
+
+  #brightness {
+    width: 100%;
+    height: 8px;
+    background:grey;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+  }
+
+  
+   #brightness::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: gray; 
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  

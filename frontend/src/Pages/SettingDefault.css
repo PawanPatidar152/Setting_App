@@ -1,0 +1,170 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  color: white;
+  text-decoration: none;
+}
+
+:root {
+  --background-color: rgb(255, 255, 255);
+  --background1-color: rgb(242, 242, 247);
+  --text-color: black;
+}
+.dark-mode {
+  --background-color: rgb(44, 44, 46);
+  --background1-color: rgb(0, 0, 0);
+  --text-color: #fff;
+}
+
+.appleID,
+.mainComponant {
+  background-color: var(--background1-color);
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+.mainSetting1,
+.appleID1 {
+  background-color: var(--background1-color);
+  background-color1: var(--background-color);
+}
+* {
+  color: var(--text-color);
+}
+
+.mainSetting1 {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  overflow-y: scroll;
+  scrollbar-width: 0px;
+  scrollbar-track-color: inherit;
+}
+.mainSetting1::-webkit-scrollbar {
+  display: none;
+}
+.mainBox {
+  padding: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.topNav1 {
+  position: sticky;
+  height: 70px;
+  width: 100%;
+  background-color: var(--background1-color);
+  border: none;
+  top: 0px;
+}
+.upperNav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 15px;
+  padding-top: 15px;
+}
+.lowerNav {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 100%;
+}
+.lowerNav button {
+  display: flex;
+  height: 20px;
+  width: 20vw;
+  background-color: transparent;
+  border: none;
+  color: rgb(76, 124, 244);
+}
+
+.topNavlogo1 {
+  display: flex;
+  column-gap: 5px;
+}
+.topNavlogo1 img {
+  height: 15px;
+}
+
+.nodge1 {
+  width: 40%;
+  background-color: black;
+  border: none;
+  outline: none;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.appleID {
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+}
+.innerappleID {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+.logo {
+  background-color: grey;
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+}
+.logo img {
+  height: 40px;
+  width: 40px;
+  border: none;
+  border-radius: 50%;
+}
+
+.innerComponant {
+  margin: 0px 10px;
+  padding: 10px;
+  padding-bottom: 0px;
+}
+.logoinner {
+  background-color: grey;
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 80px;
+}
+.logoinner img {
+  height: 20px;
+  width: 20px;
+  border: none;
+  border-radius: 28%;
+}
+.topinnercomponent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 20px;
+}
+
+#battery {
+  height: 20px;
+}
+
+.SettingName {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60vw;
+}

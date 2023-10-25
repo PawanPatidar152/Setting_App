@@ -1,0 +1,32 @@
+.slider-container {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider-container img{
+    height: 30px;
+    width: 30px;
+  }
+  
+  .custom-slider {
+    width: 100%;
+    height: 8px;
+    background:grey;
+    border: 1px solid #333;
+    border-radius: 10px;
+    outline: none;
+    transition: opacity 0.2s;
+  }
+  
+  .custom-slider::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  

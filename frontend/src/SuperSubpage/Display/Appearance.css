@@ -1,0 +1,18 @@
+.upperPhones {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+.labelInner {
+  display: flex;
+    flex-direction: column;
+    row-gap: 14px;
+    align-items: center;
+}
+.labelInner img {
+  height: 120px;
+  width: 50px; 
+  border: none;
+  border-radius: 10px;
+}
