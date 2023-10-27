@@ -7,11 +7,9 @@ import image2 from "../../assets/DarkMode.jpg";
 import Larger from "../../assets/Larger.jpg";
 import Default from "../../assets/Default.jpg";
 import { useState, useEffect } from "react";
-
+// Apppearance is used to show dark mode light mode
 function Appearance(props) {
   const [isDarkMode, setIsDarkMode] = useState(true);
-
-
 
   const updateModeInAPI = async (id, updatedValue) => {
     console.log("Updating Modein API ", id, updatedValue);
