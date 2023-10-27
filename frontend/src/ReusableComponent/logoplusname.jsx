@@ -2,13 +2,15 @@ import React from "react";
 import "./logoplusname.css";
 import { Link } from "react-router-dom";
 function Logoplusname(props) {
+//if need to link any other page and to show horizontal line between componant
+
   if (props.link && props.hr) {
     return (
       <Link to={props.link}>
-        <div className="innerComponant3">
-          <div className="topinnercomponent3">
+        <div className="LogoplusnameInner">
+          <div className="LogoplusnameTop">
             <div className="topLeft">
-              <div className="logoinner3">
+              <div className="innerLogoPlus">
                 <img src={props.image} alt="" />
               </div>
               <p>{props.label} </p>
@@ -22,10 +24,10 @@ function Logoplusname(props) {
   } else if (props.link) {
     return (
       <Link to={props.link}>
-        <div className="innerComponant3">
-          <div className="topinnercomponent3">
+        <div className="LogoplusnameInner">
+          <div className="LogoplusnameTop">
             <div className="topLeft">
-              <div className="logoinner3">
+              <div className="innerLogoPlus">
                 <img src={props.image} alt="" />
               </div>
               <p>{props.label} </p>
@@ -37,10 +39,10 @@ function Logoplusname(props) {
     );
   } else if (props.hr) {
     return (
-      <div className="innerComponant3">
-        <div className="topinnercomponent3">
+      <div className="LogoplusnameInner">
+        <div className="LogoplusnameTop">
           <div style={{ display: "flex", columnGap: "11px" }}>
-            <div className="logoinner3">
+            <div className="innerLogoPlus">
               <img src={props.image} alt="" />
             </div>
             <p>{props.label} </p>
@@ -52,10 +54,10 @@ function Logoplusname(props) {
     );
   } else {
     return (
-      <div className="innerComponant3">
-        <div className="topinnercomponent3">
+      <div className="LogoplusnameInner">
+        <div className="LogoplusnameTop">
           <div style={{ display: "flex", columnGap: "11px" }}>
-            <div className="logoinner3">
+            <div className="innerLogoPlus">
               <img src={props.image} alt="" />
             </div>
             <p>{props.label} </p>

@@ -2,10 +2,12 @@ import React from "react";
 import SettingDefault from "../Pages/SettingDefault";
 import DataInMainComponant from "../ReusableComponent/DataInMainComponant";
 import MainComponants from "../Components/MainComponants";
-
+import { useEffect,useState } from "react";
 import "../Pages/SettingDefault.css";
 function SubAbout() {
-  const props1 = [
+
+  //hr means horizontal line between componants
+  const mainData = [
     <>
       <DataInMainComponant title="Name" data="Pawan' iphone 12" hr="yes" />
       <DataInMainComponant
@@ -83,13 +85,13 @@ function SubAbout() {
 
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
-      <MainComponants props1={props1[1]} />
-      <MainComponants props1={props1[2]} />
-      <MainComponants props1={props1[3]} />
-      <MainComponants props1={props1[4]} />
-      <MainComponants props1={props1[5]} />
-      <MainComponants props1={props1[6]} />
+      <MainComponants mainData={mainData[0]} />
+      <MainComponants mainData={mainData[1]} />
+      <MainComponants mainData={mainData[2]} />
+      <MainComponants mainData={mainData[3]} />
+      <MainComponants mainData={mainData[4]} />
+      <MainComponants mainData={mainData[5]} />
+      <MainComponants mainData={mainData[6]} />
     </>
   );
   return (

@@ -1,4 +1,4 @@
-.appleID1 {
+.appleIdVertical {
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -8,7 +8,7 @@
   row-gap: 20px;
   padding: 20px;
 }
-.logo1 {
+.appleIdVerticalLogo {
   background-color: grey;
   height: 70px;
   width: 70px;
@@ -16,7 +16,7 @@
   border: none;
 
 }
-.logo1 img {
+.appleIdVerticalLogo img {
   height: 70px;
   width: 70px;
   border-radius: 50%;

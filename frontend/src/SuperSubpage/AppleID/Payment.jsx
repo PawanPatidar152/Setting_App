@@ -4,7 +4,7 @@ import MainComponants from "../../Components/MainComponants";
 import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 import AppleID from "../../Components/AppleId";
 function Payment() {
-  const props1 = [
+  const mainData = [
     <>
       <AppleID name="UPI" description="For Purchases and Adding Funds" />
       <AppleID name="Net Banking" description="For Adding Funds" />
@@ -21,10 +21,10 @@ function Payment() {
       <TextBwnMainComponant text="PAYMENT METHOD" />
       <TextBwnMainComponant text="You will not be charged until you make a purchase" />
 
-      <MainComponants props1={props1[0]} />
-      <MainComponants props1={props1[1]} />
+      <MainComponants mainData={mainData[0]} />
+      <MainComponants mainData={mainData[1]} />
       <TextBwnMainComponant text="BILLING ADDRESS" />
-      <MainComponants props1={props1[2]} />
+      <MainComponants mainData={mainData[2]} />
       <TextBwnMainComponant text="You can use multiple payment methods with your Apple ID. " />
 
       <TextBwnMainComponant text="You authorise Apple to charge this default payment method for paid transactions,and if there is a problem, your next eligible payment methods." />

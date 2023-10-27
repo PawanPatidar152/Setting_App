@@ -6,7 +6,7 @@ import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 import iphoneCoverage from "../../assets/iphoneCoverage.jpeg";
 import airpods from "../../assets/airpods.jpeg";
 function Coverage() {
-  const props1 = [
+  const mainData = [
     <>
       <AppleID
         name="Pawan's Iphone 12"
@@ -28,9 +28,9 @@ function Coverage() {
   const props = (
     <>
       <TextBwnMainComponant text="THIS DEVICE" />
-      <MainComponants props1={props1[0]} />
+      <MainComponants mainData={mainData[0]} />
       <TextBwnMainComponant text="PAIRED DEVICES" />
-      <MainComponants props1={props1[1]} />
+      <MainComponants mainData={mainData[1]} />
       <TextBwnMainComponant text="Coverage is only shown for this iphone and selected Bluetooth-paired devices . For a full list of your dvices, go to Apple Support." />
     </>
   );

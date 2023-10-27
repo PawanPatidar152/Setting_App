@@ -8,19 +8,21 @@ import media from "../assets/media.jpg";
 import find from "../assets/find.jpg";
 import family from "../assets/family.jpg";
 import AppleID from "../Components/AppleId";
-import AppleID1 from "../ReusableComponent/AppleIDVerical";
+import AppleIDVertical from "../ReusableComponent/AppleIDVerical";
 import pawan from "../assets/pawan.jpeg";
 import iphoneClone from "../assets/IphoneClone.jpg";
+import { useEffect,useState } from "react";
 function AppleIDDes() {
+
   const logout = (
     <p style={{ textAlign: "center", padding: "10px", color: "red" }}>
       SIGN OUT
     </p>
   );
 
-  const props1 = [
+  const mainData = [
     <>
-      <AppleID1
+      <AppleIDVertical
         name="Pawan Patidar"
         description="+91 7089719195"
         image={pawan}
@@ -81,11 +83,11 @@ function AppleIDDes() {
 
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
-      <MainComponants props1={props1[1]} />
-      <MainComponants props1={props1[2]} />
-      <MainComponants props1={props1[3]} />
-      <MainComponants props1={logout} />
+      <MainComponants mainData={mainData[0]} />
+      <MainComponants mainData={mainData[1]} />
+      <MainComponants mainData={mainData[2]} />
+      <MainComponants mainData={mainData[3]} />
+      <MainComponants mainData={logout} />
     </>
   );
 

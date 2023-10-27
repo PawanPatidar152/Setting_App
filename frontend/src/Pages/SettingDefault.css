@@ -6,12 +6,12 @@
   text-decoration: none;
 }
 
-:root {
+ .dark-mode {
   --background-color: rgb(255, 255, 255);
   --background1-color: rgb(242, 242, 247);
   --text-color: black;
 }
-.dark-mode {
+:root{
   --background-color: rgb(44, 44, 46);
   --background1-color: rgb(0, 0, 0);
   --text-color: #fff;
@@ -23,8 +23,8 @@
   background-color: var(--background-color);
   color: var(--text-color);
 }
-.mainSetting1,
-.appleID1 {
+.mainDisplay,
+.appleIdVertical {
   background-color: var(--background1-color);
   background-color1: var(--background-color);
 }
@@ -32,7 +32,7 @@
   color: var(--text-color);
 }
 
-.mainSetting1 {
+.mainDisplay {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -43,7 +43,7 @@
   scrollbar-width: 0px;
   scrollbar-track-color: inherit;
 }
-.mainSetting1::-webkit-scrollbar {
+.mainDisplay::-webkit-scrollbar {
   display: none;
 }
 .mainBox {
@@ -53,7 +53,7 @@
   row-gap: 10px;
 }
 
-.topNav1 {
+.topNavBar {
   position: sticky;
   height: 70px;
   width: 100%;
@@ -83,11 +83,11 @@
   color: rgb(76, 124, 244);
 }
 
-.topNavlogo1 {
+.topNavBarLogo {
   display: flex;
   column-gap: 5px;
 }
-.topNavlogo1 img {
+.topNavBarLogo img {
   height: 15px;
 }
 

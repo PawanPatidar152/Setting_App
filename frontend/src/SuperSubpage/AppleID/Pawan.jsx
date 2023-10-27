@@ -6,7 +6,7 @@ import AppleIDVerical from "../../ReusableComponent/AppleIDVerical";
 import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 import IphoneClone from "../../assets/IphoneClone.jpg";
 function Pawan() {
-  const props1 = [
+  const mainData = [
     <>
       <AppleIDVerical
         name="Pawan's iPhone"
@@ -32,10 +32,10 @@ function Pawan() {
   ];
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
-      <MainComponants props1={props1[1]} />
+      <MainComponants mainData={mainData[0]} />
+      <MainComponants mainData={mainData[1]} />
       <TextBwnMainComponant text="DEVICE INFO" />
-      <MainComponants props1={props1[2]} />
+      <MainComponants mainData={mainData[2]} />
       <TextBwnMainComponant text="This device is trusted and can receive Apple Id verification codes. " />
     </>
   );

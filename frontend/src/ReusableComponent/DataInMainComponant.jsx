@@ -3,11 +3,12 @@ import "./DataInMainComponant.css";
 import { Link } from "react-router-dom";
 
 function DataInMainComponant(props) {
+  //if link to any other page and a horizontal lie between componant
   if (props.link && props.hr) {
     return (
       <Link to={props.link}>
-        <div className="innerComponant2">
-          <div className="topinnercomponent2">
+        <div className="mainInnerComponant">
+          <div className="topInnerMainCoponant">
             <div>
               <p>{props.title}</p>
             </div>
@@ -17,11 +18,13 @@ function DataInMainComponant(props) {
         </div>
       </Link>
     );
-  } else if (props.link) {
+  } 
+  //link to any page only
+  else if (props.link) {
     return (
       <Link to={props.link}>
-        <div className="innerComponant2">
-          <div className="topinnercomponent2">
+        <div className="mainInnerComponant">
+          <div className="topInnerMainCoponant">
             <div>
               <p>{props.title}</p>
             </div>
@@ -31,10 +34,12 @@ function DataInMainComponant(props) {
         </div>
       </Link>
     );
-  } else if (props.hr) {
+  } 
+  //to show horizontal line only
+  else if (props.hr) {
     return (
-      <div className="innerComponant2">
-        <div className="topinnercomponent2">
+      <div className="mainInnerComponant">
+        <div className="topInnerMainCoponant">
           <div>
             <p>{props.title}</p>
             <p>{}</p>
@@ -46,8 +51,8 @@ function DataInMainComponant(props) {
     );
   } else {
     return (
-      <div className="innerComponant2">
-        <div className="topinnercomponent2">
+      <div className="mainInnerComponant">
+        <div className="topInnerMainCoponant">
           <div>
             <p>{props.title}</p>
             <p>{}</p>

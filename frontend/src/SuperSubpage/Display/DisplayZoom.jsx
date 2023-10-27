@@ -3,7 +3,7 @@ import SettingDefault from "../../Pages/SettingDefault";
 import MainComponants from "../../Components/MainComponants";
 import Appearance from "./Appearance";
 function DisplayZoom() {
-  const props1 = [
+  const mainData = [
     <>
       <Appearance text1="Larger Text" text2="Default" />
     </>,
@@ -11,7 +11,7 @@ function DisplayZoom() {
 
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
+      <MainComponants mainData={mainData[0]} />
     </>
   );
 

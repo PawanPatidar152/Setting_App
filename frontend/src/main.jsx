@@ -40,13 +40,14 @@ import HotspotFunction from "./SuperSubpage/Connection/Hotspotfunction";
 import { useState, useEffect } from "react";
 
 function Main() {
+
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Homepage props="props" />} />
         <Route path="Setting" element={<SettingMainPage />} />
         <Route path="/Setting/AppleID" element={<AppleIDDes />} />
-        <Route path="/Setting/Sound" element={<SubSound />} />
+        <Route path="/Setting/Sound" element={<SubSound  />} />
         <Route path="/Setting/Display" element={<SubDisplay />} />
         <Route path="/Setting/Connection" element={<SubConnection />} />
         <Route path="/Setting/About" element={<SubAbout />} />

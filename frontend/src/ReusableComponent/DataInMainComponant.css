@@ -1,4 +1,4 @@
-.innerComponant2 {
+.mainInnerComponant {
     margin: 0px 10px;
     padding: 10px;
     padding-bottom: 0px;
@@ -16,7 +16,7 @@
     border: none;
     border-radius: 50%;
   }
-  .topinnercomponent2 {
+  .topInnerMainCoponant {
     display: flex;
     align-items: center;
     justify-content: space-between;

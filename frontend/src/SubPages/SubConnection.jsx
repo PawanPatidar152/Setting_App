@@ -6,8 +6,11 @@ import WIFI from "../assets/Wifi.jpg";
 import HOTSPOT from "../assets/Hotspot.jpg";
 import DATA from "../assets/Data.jpg";
 import BLUTOOTH from "../assets/Bluetooth.jpg";
+import { useEffect,useState } from "react";
 function SubConnection() {
-  const props1 = [
+
+
+  const mainData = [
     <>
       <SubSetting
         label="Wi-fi"
@@ -44,10 +47,10 @@ function SubConnection() {
 
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
-      <MainComponants props1={props1[1]} />
-      <MainComponants props1={props1[2]} />
-      <MainComponants props1={props1[3]} />
+      <MainComponants mainData={mainData[0]} />
+      <MainComponants mainData={mainData[1]} />
+      <MainComponants mainData={mainData[2]} />
+      <MainComponants mainData={mainData[3]} />
     </>
   );
   return (

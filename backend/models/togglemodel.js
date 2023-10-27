@@ -130,23 +130,22 @@ const toggleSchema = mongoose.Schema({
     type: Boolean,
     required: true,
   },
-  BrightnessSlider:{
+  BrightnessSlider: {
     type: Number,
-    required:false,
+    required: false,
   },
-  TextSlider:{
+  TextSlider: {
     type: Number,
-    required:false,
+    required: false,
   },
-  RingtoneSlider:{
+  RingtoneSlider: {
     type: Number,
-    required:false,
+    required: false,
   },
-  Mode:{
-    type:Boolean,
-    required:false,
-  }
+  Mode: {
+    type: Boolean,
+    required: false,
+  },
 });
 
 export const Toggle = mongoose.model("Toggle", toggleSchema);
-

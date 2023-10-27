@@ -5,7 +5,7 @@ import MainComponants from "../../Components/MainComponants";
 import ToggleSwitch from "../../ReusableComponent/Toggle";
 import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 function SentMail() {
-  const props1 = [
+  const mainData = [
     <>
       <DataInMainComponant title="Vibration" data="Default >" />
     </>,
@@ -61,14 +61,14 @@ function SentMail() {
   ];
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
+      <MainComponants mainData={mainData[0]} />
 
       <TextBwnMainComponant text="Store" />
-      <MainComponants props1={props1[1]} />
+      <MainComponants mainData={mainData[1]} />
       <TextBwnMainComponant text="This will download all ringtones and alerts purchased using the 7089719195 account" />
-      <MainComponants props1={props1[2]} />
+      <MainComponants mainData={mainData[2]} />
       <TextBwnMainComponant text="ALERT TONES" />
-      <MainComponants props1={props1[3]} />
+      <MainComponants mainData={mainData[3]} />
     </>
   );
   return (

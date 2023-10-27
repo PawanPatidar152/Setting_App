@@ -4,7 +4,7 @@ import MainComponants from "../../Components/MainComponants";
 import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 import DataInMainComponant from "../../ReusableComponent/DataInMainComponant";
 function AutoLock() {
-  const props1 = [
+  const mainData = [
     <>
       <DataInMainComponant title="30 seconds" hr="yes" />
       <DataInMainComponant title="1 minutes" hr="yes" />
@@ -18,7 +18,7 @@ function AutoLock() {
 
   const props = (
     <>
-      <MainComponants props1={props1[0]} />
+      <MainComponants mainData={mainData[0]} />
       <TextBwnMainComponant text="Attention is detected when you are looking at the screen . When attention is detected,iphone does not dim the display." />
     </>
   );

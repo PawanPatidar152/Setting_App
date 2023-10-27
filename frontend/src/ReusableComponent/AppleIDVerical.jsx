@@ -1,10 +1,10 @@
 import React from "react";
 import "./AppleIDVerical.css";
-export default function AppleID1(props) {
+export default function AppleIDVertical(props) {
   return (
     <>
-      <div className="appleID1">
-        <div className="logo1">
+      <div className="appleIdVertical">
+        <div className="appleIdVerticalLogo">
           <img src={props.image} alt="dp" />
         </div>
         <div>
