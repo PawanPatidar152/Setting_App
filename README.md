@@ -19,10 +19,12 @@ we use Vite  JS  in frontend
 
 Here we use normal css and the css is wrritten in csss file
 
+The settip App project is developed using react
+
 #Url for video
 https://www.loom.com/share/4a025be9c4614a1f908d935f90a9a0e1?sid=c9fe220d-6a70-433b-88bd-cb35e643f4b1
 
-
+https://www.loom.com/share/06cd2a8f613e449b8cc7e5888004220d?sid=812b0319-381e-49da-ae7f-e8fec613e5fc
 
 ![Screenshot from 2023-10-27 16-20-30](https://github.com/PawanPatidar152/Setting_App/assets/117740750/1bc6a22f-4831-41be-a503-f1a21bd527d9)
 ![Screenshot from 2023-10-27 16-21-17](https://github.com/PawanPatidar152/Setting_App/assets/117740750/da449dca-4ded-4189-ae0d-7d82a46fa529)
