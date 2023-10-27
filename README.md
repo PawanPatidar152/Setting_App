@@ -17,3 +17,4 @@ we use Vite  JS  in frontend
     we use nodemon here so it automatically re-run
 
 Here we use normal css and the css is wrritten in csss file
+file:///home/prince/Pictures/Screenshots/Screenshot%20from%202023-10-27%2016-20-30.png
