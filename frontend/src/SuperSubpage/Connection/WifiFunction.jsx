@@ -65,27 +65,9 @@ function WifiFunction() {
       </div>
     );
   } else {
-    const mainData = [
-      <>
-        <DataInMainComponant
-          title="Wi-Fi"
-          data={<ToggleSwitch  label="WIFI" />}
-        />
-      </>,
-      <>
-        <DataInMainComponant title="Other..." />
-      </>,
-
-      <>
-        <DataInMainComponant title="Ask to Join Networks" data="Ask >" />
-      </>,
-      <>
-        <DataInMainComponant title="Auto-join Hotspot" data="Automatic >" />
-      </>,
-    ];
     const props = (
       <>
-       <LoadingSpinner/>
+        <LoadingSpinner />
       </>
     );
     return (

@@ -109,58 +109,7 @@ function SubDisplay() {
   );
   }
   else{
-    const mainData = [
-      <>
-        <Appearance text1="Light" text2="Dark" automatic="yes" />
-      </>,
-  
-      <>
-        <DataInMainComponant
-          title="Text Size"
-          data=">"
-          link="/Setting/Display/Text"
-          hr="yes"
-        />
-        <DataInMainComponant
-          title="Bold Text"
-          data={<ToggleSwitch label="BoldText" />}
-        />
-      </>,
-      <>
-        <BrightnessSlider image1={lowBright} image2={highBright} />
-        <DataInMainComponant
-          title="True Tone"
-          data={<ToggleSwitch label="TrueTone" />}
-        />
-      </>,
-      <>
-        <DataInMainComponant
-          title="Night Shift"
-          data=">"
-          link="/Setting/Display/Night"
-        />
-      </>,
-      <>
-        <DataInMainComponant
-          title="Auto Lock"
-          data=">"
-          link="/Setting/Display/AutoLock"
-          hr="yes"
-        />
-        <DataInMainComponant
-          title="Raise to Wake"
-          data={<ToggleSwitch label="RaiseToWake" />}
-        />
-      </>,
-      <>
-        <DataInMainComponant
-          title="Display Zoom"
-          data="Default >"
-          link="/Setting/Display/DisplayZoom"
-        />
-      </>,
-    ];
-  
+   
     const props = (
       <>
        <LoadingSpinner/>

@@ -4,7 +4,7 @@ import MainComponants from "../../Components/MainComponants";
 import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 import DataInMainComponant from "../../ReusableComponent/DataInMainComponant";
 import ToggleSwitch from "../../ReusableComponent/Toggle";
-import { useState,useEffect  } from "react";
+import { useState, useEffect } from "react";
 import LoadingSpinner from "../../ReusableComponent/LoadingSpinner";
 function Night() {
   const [data, setData] = useState();
@@ -25,63 +25,50 @@ function Night() {
     fetchData();
   }, []);
 
- 
-
   if (data && data.data[0]) {
-
-  
-
-  const mainData = [
-    <>
-      <DataInMainComponant
-        title="Sheduled"
-        data={<ToggleSwitch newData={data.data[0]} label="Scheduled" />}
-      />
-    </>,
-    <>
-      <DataInMainComponant
-        title="Manually Enable Until Tommorow"
-        data={<ToggleSwitch newData={data.data[0]} label="Manually" />}
-      />
-    </>,
-  ];
-
-  const props = (
-    <>
-      <TextBwnMainComponant text="Night shift automatically shifts the colours of your display to the warmer end of the colour spectrum after dark. This may help you get a better night's sleep." />
-      <MainComponants mainData={mainData[0]} />
-      <MainComponants mainData={mainData[1]} />
-    </>
-  );
-
-  return (
-    <SettingDefault props={props} option="< Back " SettingName="Night shift" />
-  );}
-  else{
-
     const mainData = [
       <>
         <DataInMainComponant
           title="Sheduled"
-          data={<ToggleSwitch label="Scheduled" />}
+          data={<ToggleSwitch newData={data.data[0]} label="Scheduled" />}
         />
       </>,
       <>
         <DataInMainComponant
           title="Manually Enable Until Tommorow"
-          data={<ToggleSwitch label="Manually" />}
+          data={<ToggleSwitch newData={data.data[0]} label="Manually" />}
         />
       </>,
     ];
-  
+
     const props = (
       <>
-       <LoadingSpinner/>
+        <TextBwnMainComponant text="Night shift automatically shifts the colours of your display to the warmer end of the colour spectrum after dark. This may help you get a better night's sleep." />
+        <MainComponants mainData={mainData[0]} />
+        <MainComponants mainData={mainData[1]} />
       </>
     );
-  
+
     return (
-      <SettingDefault props={props} option="< Back " SettingName="Night shift" />
+      <SettingDefault
+        props={props}
+        option="< Back "
+        SettingName="Night shift"
+      />
+    );
+  } else {
+    const props = (
+      <>
+        <LoadingSpinner />
+      </>
+    );
+
+    return (
+      <SettingDefault
+        props={props}
+        option="< Back "
+        SettingName="Night shift"
+      />
     );
   }
 }

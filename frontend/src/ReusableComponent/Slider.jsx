@@ -11,22 +11,6 @@ function Slider(props) {
   },[props])
 
 
-  // useEffect(() => {
-  //   async function fetchSliderData() {
-  //     try {
-  //       const response = await fetch("http://localhost:5555/toggle", {
-  //         method: "GET",
-  //       });
-
-  //       const data = await response.json();
-  //       setSliderValue(data.data[0][props.label]);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   }
-  //   fetchSliderData();
-  // }, []);
-
   const updateSliderData = async (id, updatedValue, label) => {
     await fetch(`http://localhost:5555/toggle/${id}`, {
       body: JSON.stringify({ [label]: updatedValue }),

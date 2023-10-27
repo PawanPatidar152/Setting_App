@@ -11,31 +11,7 @@ import { useState, useEffect } from "react";
 function Appearance(props) {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
-  // useEffect(() => {
-  //   if (isDarkMode) {
-  //     document.documentElement.classList.add("dark-mode");
-  //   } else {
-  //     document.documentElement.classList.remove("dark-mode");
-  //   }
-  // }, [isDarkMode]);
 
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     console.log("Fetching Mode in an API");
-  //     try {
-  //       const response = await fetch("http://localhost:5555/toggle", {
-  //         method: "GET",
-  //       });
-
-  //       const data = await response.json();
-  //       console.log("Mode  is...", data.data[0].Mode);
-  //       setIsDarkMode(data.data[0].Mode);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   }
-  //   fetchData();
-  // }, []);
 
   const updateModeInAPI = async (id, updatedValue) => {
     console.log("Updating Modein API ", id, updatedValue);

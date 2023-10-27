@@ -26,37 +26,35 @@ function Text() {
   }, []);
 
   if (data && data.data[0]) {
-  const mainData = [
-    <>
-      <Slider newData={data.data[0]} label="TextSlider" image1={image1} image2={image2} />
-    </>,
-  ];
-
-  const props = (
-    <>
-      <TextBwnMainComponant text="Apps that support Dynamic Type will adjust to your peferred reading size below." />
-      <br></br>
-      <MainComponants mainData={mainData[0]} />
-    </>
-  );
-
-  return (
-    <SettingDefault props={props} option="< Back " SettingName="Text Size" />
-  );
-  }
-  else{
     const mainData = [
       <>
-        <Slider  label="TextSlider" image1={image1} image2={image2} />
+        <Slider
+          newData={data.data[0]}
+          label="TextSlider"
+          image1={image1}
+          image2={image2}
+        />
       </>,
     ];
-  
+
     const props = (
       <>
-      <LoadingSpinner/>
+        <TextBwnMainComponant text="Apps that support Dynamic Type will adjust to your peferred reading size below." />
+        <br></br>
+        <MainComponants mainData={mainData[0]} />
       </>
     );
-  
+
+    return (
+      <SettingDefault props={props} option="< Back " SettingName="Text Size" />
+    );
+  } else {
+    const props = (
+      <>
+        <LoadingSpinner />
+      </>
+    );
+
     return (
       <SettingDefault props={props} option="< Back " SettingName="Text Size" />
     );

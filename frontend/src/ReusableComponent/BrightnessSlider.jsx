@@ -8,22 +8,6 @@ function BrightnessSlider(props) {
     }
   },[props])
 
-
-  // useEffect(() => {
-  //   async function fetchSliderData() {
-  //     try {
-  //       const response = await fetch("http://localhost:5555/toggle", {
-  //         method: "GET",
-  //       });
-  //       const data = await response.json();
-  //       setBrightness(data.data[0].BrightnessSlider);
-  //     } catch (error) {
-  //       console.error("Error fetching data:", error);
-  //     }
-  //   }
-  //   fetchSliderData();
-  // }, []);
-
   const updateSliderDataInAPI = async (id, updatedValue) => {
     await fetch(`http://localhost:5555/toggle/${id}`, {
       body: JSON.stringify({ BrightnessSlider: updatedValue }),

@@ -79,29 +79,6 @@ function Name() {
     </div>
   );
   }else{
-    const mainData = [
-      <>
-        <DataInMainComponant title="Name" data="Pawan Patidar" />
-      </>,
-      <>
-        <DataInMainComponant title="+917089719195" />
-      </>,
-      <>
-        <DataInMainComponant title="Date of birth" data="04/08/00" />
-      </>,
-      <>
-        <DataInMainComponant
-          title="Announcements"
-          data={<ToggleSwitch  label="Announcement" />}
-        />
-      </>,
-      <>
-        <DataInMainComponant
-          title="Apps,music,TV and more"
-          data={<ToggleSwitch label="Music" />}
-        />
-      </>,
-    ];
     const props = (
       <>
        <LoadingSpinner/>

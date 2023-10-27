@@ -4,10 +4,9 @@ import DataInMainComponant from "../../ReusableComponent/DataInMainComponant";
 import MainComponants from "../../Components/MainComponants";
 import TextBwnMainComponant from "../../ReusableComponent/TextBwnMainComponant";
 import ToggleSwitch from "../../ReusableComponent/Toggle";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import LoadingSpinner from "../../ReusableComponent/LoadingSpinner";
 function BluetoothFunction() {
-
   const [data, setData] = useState();
 
   useEffect(() => {
@@ -26,88 +25,20 @@ function BluetoothFunction() {
     fetchData();
   }, []);
 
- 
-
   if (data && data.data[0]) {
-  const mainData = [
-    <>
-      <DataInMainComponant
-        title="Allow New Connections"
-        data={<ToggleSwitch newData={data.data[0]} label="AllowToJoin" />}
-      />
-    </>,
-    <>
-      <DataInMainComponant title="HALONIX BT " data="Not Connected" hr="yes" />
-      <DataInMainComponant title="HKZ " data="Not Connected" hr="yes" />
-      <DataInMainComponant
-        title="KUMAWAT RADIO "
-        data="Not Connected"
-        hr="yes"
-      />
-      <DataInMainComponant title="MAX 611 " data="Not Connected" hr="yes" />
-      <DataInMainComponant title="MY CAR " data="Not Connected" hr="yes" />
-      <DataInMainComponant
-        title="OPPO ENCO W11"
-        data="Not Connected"
-        hr="yes"
-      />
-      <DataInMainComponant
-        title="Pawan's Airpods"
-        data="Not Connected"
-        hr="yes"
-      />
-      <DataInMainComponant title="Raj Radios " data="Not Connected" hr="yes" />
-      <DataInMainComponant
-        title="Rajesh Radios "
-        data="Not Connected"
-        hr="yes"
-      />
-      <DataInMainComponant title="Rockerz 333" data="Not Connected" hr="yes" />
-      <DataInMainComponant title="Santro" data="Not Connected" hr="yes" />
-      <DataInMainComponant title="series 7" data="Not Connected" hr="yes" />
-      <DataInMainComponant
-        title="  SKODA RAPID "
-        data="Not Connected"
-        hr="yes"
-      />
-      <DataInMainComponant title="ZEB - THUNDER " data="Not Connected" />
-    </>,
-  ];
-  const props = (
-    <>
-      <MainComponants mainData={mainData[0]} />
-      <TextBwnMainComponant text="New Blutooth connections have been turned off from Control Center " />
-      <br />
-      <TextBwnMainComponant text="MY DEVICES" />
-
-      <MainComponants mainData={mainData[1]} />
-      <br />
-      <TextBwnMainComponant text="OTHER DEVICES" />
-
-      <TextBwnMainComponant text="To pair an apple Watch with uour iPhone , go to the Apple Watch App." />
-      <br />
-      <br />
-    </>
-  );
-  return (
-    <div>
-      <SettingDefault
-        props={props}
-        option="< Settings"
-        SettingName="Bluetooth"
-      />
-    </div>
-  );}
-  else{
     const mainData = [
       <>
         <DataInMainComponant
           title="Allow New Connections"
-          data={<ToggleSwitch label="AllowToJoin" />}
+          data={<ToggleSwitch newData={data.data[0]} label="AllowToJoin" />}
         />
       </>,
       <>
-        <DataInMainComponant title="HALONIX BT " data="Not Connected" hr="yes" />
+        <DataInMainComponant
+          title="HALONIX BT "
+          data="Not Connected"
+          hr="yes"
+        />
         <DataInMainComponant title="HKZ " data="Not Connected" hr="yes" />
         <DataInMainComponant
           title="KUMAWAT RADIO "
@@ -126,13 +57,21 @@ function BluetoothFunction() {
           data="Not Connected"
           hr="yes"
         />
-        <DataInMainComponant title="Raj Radios " data="Not Connected" hr="yes" />
+        <DataInMainComponant
+          title="Raj Radios "
+          data="Not Connected"
+          hr="yes"
+        />
         <DataInMainComponant
           title="Rajesh Radios "
           data="Not Connected"
           hr="yes"
         />
-        <DataInMainComponant title="Rockerz 333" data="Not Connected" hr="yes" />
+        <DataInMainComponant
+          title="Rockerz 333"
+          data="Not Connected"
+          hr="yes"
+        />
         <DataInMainComponant title="Santro" data="Not Connected" hr="yes" />
         <DataInMainComponant title="series 7" data="Not Connected" hr="yes" />
         <DataInMainComponant
@@ -145,7 +84,33 @@ function BluetoothFunction() {
     ];
     const props = (
       <>
-       <LoadingSpinner/>
+        <MainComponants mainData={mainData[0]} />
+        <TextBwnMainComponant text="New Blutooth connections have been turned off from Control Center " />
+        <br />
+        <TextBwnMainComponant text="MY DEVICES" />
+
+        <MainComponants mainData={mainData[1]} />
+        <br />
+        <TextBwnMainComponant text="OTHER DEVICES" />
+
+        <TextBwnMainComponant text="To pair an apple Watch with uour iPhone , go to the Apple Watch App." />
+        <br />
+        <br />
+      </>
+    );
+    return (
+      <div>
+        <SettingDefault
+          props={props}
+          option="< Settings"
+          SettingName="Bluetooth"
+        />
+      </div>
+    );
+  } else {
+    const props = (
+      <>
+        <LoadingSpinner />
       </>
     );
     return (

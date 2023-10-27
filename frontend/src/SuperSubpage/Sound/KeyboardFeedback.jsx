@@ -3,7 +3,7 @@ import SettingDefault from "../../Pages/SettingDefault";
 import DataInMainComponant from "../../ReusableComponent/DataInMainComponant";
 import MainComponants from "../../Components/MainComponants";
 import ToggleSwitch from "../../ReusableComponent/Toggle";
-import { useEffect,useState } from "react";
+import { useEffect, useState } from "react";
 import LoadingSpinner from "../../ReusableComponent/LoadingSpinner";
 function KeyboardFeedback() {
   const [data, setData] = useState();
@@ -24,64 +24,45 @@ function KeyboardFeedback() {
     fetchData();
   }, []);
 
- 
-
   if (data && data.data[0]) {
-  
-  const mainData = [
-    <>
-      <DataInMainComponant
-        title="Sound"
-        data={<ToggleSwitch newData={data.data[0]} label="Sound" />}
-      />
-    </>,
-    <>
-      <DataInMainComponant
-        title="Haptic"
-        data={<ToggleSwitch newData={data.data[0]} label="Haptic" />}
-      />
-    </>,
-  ];
-
-  const props = (
-    <>
-      <MainComponants mainData={mainData[0]} />
-      <MainComponants mainData={mainData[1]} />
-    </>
-  );
-
-  return (
-    <div>
-      <SettingDefault
-        props={props}
-        option="< Back"
-        SettingName="Keyboard Feedback"
-      />
-    </div>
-  );
-  }
-  else{
     const mainData = [
       <>
         <DataInMainComponant
           title="Sound"
-          data={<ToggleSwitch label="Sound" />}
+          data={<ToggleSwitch newData={data.data[0]} label="Sound" />}
         />
       </>,
       <>
         <DataInMainComponant
           title="Haptic"
-          data={<ToggleSwitch label="Haptic" />}
+          data={<ToggleSwitch newData={data.data[0]} label="Haptic" />}
         />
       </>,
     ];
-  
+
     const props = (
       <>
-        <LoadingSpinner/>
+        <MainComponants mainData={mainData[0]} />
+        <MainComponants mainData={mainData[1]} />
       </>
     );
-  
+
+    return (
+      <div>
+        <SettingDefault
+          props={props}
+          option="< Back"
+          SettingName="Keyboard Feedback"
+        />
+      </div>
+    );
+  } else {
+    const props = (
+      <>
+        <LoadingSpinner />
+      </>
+    );
+
     return (
       <div>
         <SettingDefault

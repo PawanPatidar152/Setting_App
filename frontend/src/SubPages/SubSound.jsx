@@ -31,7 +31,6 @@ function SubSound() {
  
 
   if (data && data.data[0]) {
-    // console.log(data.data[0])
     const mainData = [
       <>
         <DataInMainComponant
@@ -148,8 +147,8 @@ function SubSound() {
         />
       </div>
     );
-  } else {
-   
+  } 
+  else {
     const props = (
       <>
       <LoadingSpinner/>
