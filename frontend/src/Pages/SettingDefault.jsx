@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import Reactfrom "react";
 import "./SettingDefault.css";
 import wifi from "../assets/wifi-solid.png";
 import battery from "../assets/charge.png";
